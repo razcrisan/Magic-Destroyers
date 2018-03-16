@@ -1,0 +1,10 @@
+c:\Users\Raz\MagicDestroyers\bin\Debug\netcoreapp2.0\MagicDestroyers.deps.json
+c:\Users\Raz\MagicDestroyers\bin\Debug\netcoreapp2.0\MagicDestroyers.runtimeconfig.json
+c:\Users\Raz\MagicDestroyers\bin\Debug\netcoreapp2.0\MagicDestroyers.runtimeconfig.dev.json
+c:\Users\Raz\MagicDestroyers\bin\Debug\netcoreapp2.0\MagicDestroyers.dll
+c:\Users\Raz\MagicDestroyers\bin\Debug\netcoreapp2.0\MagicDestroyers.pdb
+c:\Users\Raz\MagicDestroyers\obj\Debug\netcoreapp2.0\MagicDestroyers.csproj.CoreCompileInputs.cache
+c:\Users\Raz\MagicDestroyers\obj\Debug\netcoreapp2.0\MagicDestroyers.AssemblyInfoInputs.cache
+c:\Users\Raz\MagicDestroyers\obj\Debug\netcoreapp2.0\MagicDestroyers.AssemblyInfo.cs
+c:\Users\Raz\MagicDestroyers\obj\Debug\netcoreapp2.0\MagicDestroyers.dll
+c:\Users\Raz\MagicDestroyers\obj\Debug\netcoreapp2.0\MagicDestroyers.pdb
