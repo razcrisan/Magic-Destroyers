@@ -14,19 +14,18 @@ namespace MagicDestroyers.Characters.Melee
         private Chainlink bodyArmor;
         private Axe weapon;
         public Warrior()
+            : this("All Might", 1)
         {
-            
         }
         public Warrior(string name, int level)
+            :this(name, level, 120)
         {
-            this.Name = name;
-            this.Level = level;
         }
         public Warrior(string name, int level, int healthPoints)
         {
             this.Name = name;
             this.Level = level;
-            this.HealthPoints = healthPoints;
+            this.HealthPoints = 120;
             this.AbilityPoints = 100;
             this.Faction = "Melee";
             this.BodyArmor = new Chainlink();
