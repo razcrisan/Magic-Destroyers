@@ -1,6 +1,7 @@
 using System;
 using MagicDestroyers.Equipment.Armors.Heavy;
 using MagicDestroyers.Equipment.Weapons.Sharp;
+using Enumeration;
 
 namespace MagicDestroyers.Characters.Melee
 {
@@ -9,14 +10,14 @@ namespace MagicDestroyers.Characters.Melee
         private const string DEFAULT_NAME = "All Might";
         private const int DEFAULT_LEVEL = 1;
         private const int DEFAULT_HEALTH_POINTS = 120;
-        private const string DEFAULT_FACTION = "Melee";
+        private const Faction DEFAULT_FACTION = Faction.Melee;
         private const int DEFAULT_ABILITY_POINTS = 100;
         private readonly Chainlink DEFAULT_BODY_ARMOR =  new Chainlink();
         private readonly Axe DEFAULT_WEAPON = new Axe();
         private int abilityPoints;
         private int healthPoints;
         private int level;
-        private string faction;
+        private Faction faction;
         private string name;
         private Chainlink bodyArmor;
         private Axe weapon;
@@ -89,7 +90,7 @@ namespace MagicDestroyers.Characters.Melee
                 }
             }
         }
-            public string Name { 
+        public string Name { 
             get
             {
                 return this.name;
@@ -106,14 +107,14 @@ namespace MagicDestroyers.Characters.Melee
                 }
             }
         }
-            public string Faction { 
+        public Faction Faction { 
             get
             {
                 return this.faction;
             }
             set
             {
-                if(value == "Melee" || value == "Spellcaster")
+                if(value == Faction.Melee || value == Faction.Spellcaster)
                 {
                 this.faction = value;
                 }
@@ -145,13 +146,6 @@ namespace MagicDestroyers.Characters.Melee
             {
                 this.weapon = value;
             }
-        }
-
-        
-
-        public Warrior()
-        {
-
         }
 
         public void Strike()
