@@ -6,6 +6,13 @@ namespace MagicDestroyers.Characters.Melee
 {
     public class Warrior
     {
+        private const string DEFAULT_NAME = "All Might";
+        private const int DEFAULT_LEVEL = 1;
+        private const int DEFAULT_HEALTH_POINTS = 120;
+        private const string DEFAULT_FACTION = "Melee";
+        private const int DEFAULT_ABILITY_POINTS = 100;
+        private readonly Chainlink DEFAULT_BODY_ARMOR =  new Chainlink();
+        private readonly Axe DEFAULT_WEAPON = new Axe();
         private int abilityPoints;
         private int healthPoints;
         private int level;
@@ -14,22 +21,22 @@ namespace MagicDestroyers.Characters.Melee
         private Chainlink bodyArmor;
         private Axe weapon;
         public Warrior()
-            : this("All Might", 1)
+            : this(DEFAULT_NAME, 1)
         {
         }
         public Warrior(string name, int level)
-            :this(name, level, 120)
+            :this(name, level, DEFAULT_HEALTH_POINTS)
         {
         }
         public Warrior(string name, int level, int healthPoints)
         {
             this.Name = name;
             this.Level = level;
-            this.HealthPoints = 120;
-            this.AbilityPoints = 100;
-            this.Faction = "Melee";
-            this.BodyArmor = new Chainlink();
-            this.Weapon = new Axe();
+            this.HealthPoints = DEFAULT_HEALTH_POINTS;
+            this.AbilityPoints = DEFAULT_ABILITY_POINTS;
+            this.Faction = DEFAULT_FACTION;
+            this.BodyArmor = DEFAULT_BODY_ARMOR;
+            this.Weapon = DEFAULT_WEAPON;
         }
         public int AbilityPoints { 
             get
